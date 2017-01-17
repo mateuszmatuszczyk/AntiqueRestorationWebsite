@@ -1,0 +1,180 @@
+@charset "utf-8";
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color:#444444;
+	background-image:url(http://frenchpolishersinlondon.co.uk/wp-content/uploads/2013/06/Wood-Texture-Backgrounds.jpg);background-repeat:none;background-position:top center;background-attachment:fixed;
+
+}
+#container {
+	overflow:auto;
+	overflow-x: hidden;
+	width: 800px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background-color:#FAF7E0;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	margin-top:25px;
+	padding-bottom:50px;
+	border: none;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	box-shadow:0px 0px 15px 5px rgba(255, 255, 190, .5);
+	height:auto;
+}
+
+#header {
+	background-image:url(banner.jpg);
+	padding: 0px 15px 0px 14px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	height:200px;
+	border-bottom:double 10px;
+	border-color:black;
+	margin-bottom:10px;}
+#header h1{
+font-size:65px;
+font-family:"Edwardian Script ITC";
+color:#532900;
+float:left;
+margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+
+padding: 6px 10px;
+text-align:center;
+border-bottom:solid;
+border-color:#993333;
+}
+#logo{
+float:right;
+padding-right:15px;
+;}
+
+#top-menu {
+	margin: 0 auto;
+	
+	position:relative;
+	left:100px;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 163px;
+	z-index:5;
+}
+#top-menu, #top-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style:none;
+}
+#top-menu li {
+	position:static;
+	float: left;
+	margin: 0 10px;
+	padding: 0;
+}
+#top-menu li:hover li {
+	margin:0;
+}
+#top-menu a {
+	display: block;
+	color: #DC952D;
+	line-height: 40px;
+	text-decoration:none;
+	padding: 0px 20px;
+	font-size:14px;
+	font-weight: bold;
+}
+#top-menu a:hover, #top-menu li:hover a {
+		color:#DC572D;
+		border-bottom:thick solid;
+}
+
+
+#top-menu ul a {
+	overflow: hidden;
+	width: 140px;
+	padding:5px 10px;
+}
+#top-menu a p {
+	margin: 0;
+	padding: 0;
+	line-height:40px;
+}
+#top-menu li ul {
+	position: absolute;
+	display: none;
+	margin:0;
+}
+#top-menu li:hover > ul {
+	display: block;
+}
+#top-menu li li:hover > ul {
+	display: block;
+	left: 100%;
+	top: 0;
+}
+
+#top-menu a.selected {
+	background-color:yellow;
+}
+
+
+#mainContent {
+	background:#FAF7E0;
+	margin:auto;
+	padding:0px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	}
+#mainContent img{
+	border:solid 10px black;
+	border-left:none;
+	border-right:none;
+	margin-left:20px;
+	margin-bottom:15px;
+	}
+	
+#gallery-wrapper{
+	width:800px;
+	padding:0;
+	text-align:center;
+	margin:auto;}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+
+.text-box{
+	line-height:2;
+	margin-top:50px;
+	margin:auto;
+	height:auto;
+	width:500px;
+	border:none;
+	}
+	
+ul
+{
+list-style-image: url('arrow.png');
+}
+#contact-text-box{
+	margin-top:25px;
+	margin-left:100px;
+	width:200px;
+	float:left;
+	}
+#contact-form{
+	margin-top:40px;
+	height:400px;
+	margin-right:100px;
+	width:300px;
+	float:right;
+	}
+
+#footer {
+	color:#CCCCCC;
+	height:100px;
+	width:inherit;
+	text-align:center;}
+	
+.cycle-slideshow{
+	width: 800px;
+  	display: block;
+  	margin:auto;
+	}
+
+
